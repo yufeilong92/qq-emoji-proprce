@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, MyIcqActivity!</string>
+    <string name="app_name">Dicq</string>
+    <string name="team_list_loading">Loading......</string>
+    <string name="team_main_text_add">Add Team:</string>
+    <string name="team_main_text_del">Delete Team</string>
+    <string name="team_main_text_update">Update Team</string>
+    <string name="team_singlechat_text_send">Send</string>
+    <string name="team_singlechat_text_close">Close</string>
+    <string name="team_singlechat_text_queryrecord">Query</string>
+    <string name="team_singlechat_text_clearrecord">Clear</string>
+</resources>

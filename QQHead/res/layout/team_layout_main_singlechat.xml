@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/group_chat_bg" >
+    <RelativeLayout 
+    	android:id="@+id/team_singlechat_id_head" 
+    	android:background="#4ab6de"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_alignParentTop="true">
+        
+        <Button
+        	android:id="@+id/team_singlechat_id_close"
+        	android:layout_width="wrap_content" 
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:background="@drawable/singchat_back" 
+           />
+        <TextView 
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+        	android:textStyle="bold"
+            android:layout_centerInParent="true"
+            android:id="@+id/team_singlechat_id_title"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+		  <Button 
+	   		android:text="资料" 
+	   		android:background="@drawable/chat_sendbtn"
+	   		android:id="@+id/team_singlechat_id_information" 
+	   		android:layout_centerVertical="true"
+	   		android:layout_alignParentRight="true"
+	   		android:layout_height="wrap_content" 
+	   		android:layout_width="wrap_content"/>
+    </RelativeLayout>
+    <ListView 
+    		android:id="@+id/team_singlechat_id_showlist" 
+    		android:layout_below="@id/team_singlechat_id_head"
+    		android:layout_above="@+id/team_singlechat_id_foot"
+    		android:paddingTop="5dip"
+    		android:dividerHeight="7dip"
+    		android:transcriptMode="alwaysScroll" 
+    		android:listSelector="#00ffffff"
+    		android:fadingEdgeLength="0dip"
+    		android:cacheColorHint="#00000000"
+         	android:divider="#00000000"
+    		android:background="#e7ebf7"
+    		android:layout_height="wrap_content" 
+    		android:layout_width="fill_parent"/>
+    	<LinearLayout 
+   		android:id="@id/team_singlechat_id_foot"
+        android:layout_alignParentBottom="true"
+   		android:layout_width="fill_parent" 
+   		android:layout_height="wrap_content" 
+   		android:orientation="vertical">
+   		
+		   <RelativeLayout 
+		        android:layout_height="wrap_content"
+		        android:layout_width="fill_parent"
+		        android:background="@drawable/chat_footer_bg_white">
+		        <ImageView
+		        	android:layout_height="wrap_content"
+		        	android:layout_width="wrap_content"
+		        	android:layout_centerVertical="true"
+		        	android:id="@+id/team_singlechat_id_expression"
+		        	android:src="@drawable/chat_expression_bg"/>
+		        <EditText 
+		        	android:layout_margin="5dip"
+		        	android:layout_marginTop="10dip"
+		        	android:layout_marginBottom="10dip"
+			         android:id="@+id/team_singlechat_id_edit"
+			         android:singleLine="true"
+			         android:layout_centerVertical="true"
+			         android:layout_toRightOf="@id/team_singlechat_id_expression"
+			         android:layout_toLeftOf="@+id/team_singlechat_id_send"
+			         android:background="@drawable/chat_text_button_selector"
+			        android:layout_width="wrap_content" 
+			         android:layout_height="wrap_content"/>
+		        <Button 
+		            android:text="@string/team_singlechat_text_send"
+		            android:id="@+id/team_singlechat_id_send"
+		            android:background="@drawable/chat_sendbtn"
+		            android:layout_alignParentRight="true"
+		            android:layout_centerVertical="true"
+		            android:layout_height="wrap_content"
+		            android:layout_width="wrap_content"
+		            android:layout_marginRight="5dip"/>
+		    </RelativeLayout>
+   </LinearLayout>
+ </RelativeLayout>
+
+
+
+	 

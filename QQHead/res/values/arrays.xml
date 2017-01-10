@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="alias_option">
+		<item>On Line</item>
+		<item>leave away</item>
+		<item>Busy Now</item>
+		<item>Hinding</item>
+		<item>login out</item>
+	</string-array>
+</resources>
